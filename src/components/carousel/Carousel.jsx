@@ -1,7 +1,7 @@
-import './carousel.scss'
+import "./carousel.scss";
 
 const Carousel = () => {
-    return 'Carousel'
-}
+  return "Carousel";
+};
 
-export default Carousel
+export default Carousel;

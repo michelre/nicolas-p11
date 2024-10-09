@@ -1,7 +1,12 @@
-import './tag.scss'
+import "./tag.scss";
+import PropTypes from "prop-types";
 
-const Tag = ({name}) => {
-    return <p>{name}</p>
-}
+const Tag = ({ name }) => {
+  return <p>{name}</p>;
+};
 
-export default Tag
+Tag.propTypes = {
+  name: PropTypes.string.isRequired,
+};
+
+export default Tag;
