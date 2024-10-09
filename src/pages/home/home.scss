@@ -1,0 +1,19 @@
+.logements {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+}
+
+@media screen and (min-width: 769px) {
+    .logements {    
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .logements {    
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
