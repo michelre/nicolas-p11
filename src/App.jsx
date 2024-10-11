@@ -3,19 +3,22 @@ import LogoKasa from "./assets/LogoKasa.png";
 import LogoKasaFooter from "./assets/LogoKasaFooter.png"; // Import du logo pour le footer
 import DescriptionFooter from "./assets/DescriptionFooter.png"; // Import de l'image de description
 import "./App.scss";
+import { Link } from 'react-router-dom'
 
 const App = () => {
   return (
     <>
       <header>
-        <img src={LogoKasa} alt="Kasa Logo" />
+      <Link to="/"> 
+          <img src={LogoKasa} alt="Kasa Logo" />
+        </Link>
         <nav>
           <ul>
             <li>
-              <a href="/">Accueil</a>
+            <Link to="/">Accueil</Link>
             </li>
             <li>
-              <a href="/a-propos">A Propos</a>
+            <Link to="/a-propos">A propos</Link>
             </li>
           </ul>
         </nav>
