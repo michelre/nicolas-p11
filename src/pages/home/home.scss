@@ -9,6 +9,9 @@
 @media screen and (min-width: 769px) {
     .logements {    
         grid-template-columns: repeat(2, 1fr);
+        background: #F6F6F6; 
+        padding: 50px;
+        border-radius: 25px;
     }
 }
 

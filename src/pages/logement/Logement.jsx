@@ -27,7 +27,9 @@ const Logement = () => {
     }
 
     return <>
-        <Carousel />
+        <Carousel 
+            pictures={logement.pictures}
+        />
         <h1>{logement.title}</h1>       
         <div className="logement-details">
             <ul className="tags">
