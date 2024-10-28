@@ -5,6 +5,7 @@ import Carousel from "../../components/carousel/Carousel";
 import Tag from "../../components/tag/Tag";
 
 import './logement.scss'
+import Accordeon from "../../components/accordeon/Accordeon";
 
 const Logement = () => {
 
@@ -38,6 +39,18 @@ const Logement = () => {
                 </li>)}
             </ul>
             <Rate rating={logement.rating}/>
+            <Accordeon 
+                title="Description"
+            >
+                <p>{logement.description}</p>
+            </Accordeon>
+            <Accordeon
+                title="Equipements"
+            >
+                <ul>
+                    {logement.equipments.map(e => <li key={e}>{e}</li>)}
+                </ul>                
+            </Accordeon>
         </div> 
 
     
