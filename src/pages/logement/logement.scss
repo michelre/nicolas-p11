@@ -1,6 +1,134 @@
+.accordeons-Logement {
+    display: flex;
+    gap: 50%;
+   
+    .accordeon {
+        margin-bottom: 28px;
+    }
+    .accordeon-title {
+        background: #FF6060;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border-radius: 5px; 
+        
+        img {
+            transition: transform .5s linear;
+        }
+        
+        button {
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .accordeon-content {        
+        text-align: left;
+        background: #F6F6F673;
+        border-radius: 5px;        
+        height: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: height .5s ease-in-out;
+
+        .accordeon-children {
+            padding: 20px 25px;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &.open {
+
+        .accordeon-title img {
+            transform: rotate(180deg);            
+        }
+    }
+
+
+}
+
 .tags {
     display: flex;
+    gap: 10px;
     list-style: none;
     padding: 0;
-    gap: 16px;
+    margin: 10px 0;
+  
+    li {
+      background-color: #FF6060; 
+      color: white;
+      padding: 0px 35px;
+      border-radius: 25px; 
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+      white-space: nowrap; 
+    }
+  }
+.DescriptionLogement {
+    display: flex;
 }
+
+.logementGlobal {
+    display: flex;
+    flex-direction: column;
+}
+
+.logement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    .location {
+      font-size: 1.2rem;
+      margin-bottom: 10px; 
+      text-align: left;
+    }
+  
+    .tags {
+      display: flex;
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 10px 0; 
+    }
+
+  
+    .host-info {
+      display: flex;
+      align-items: center;
+  
+      p {
+        margin-right: 10px;
+        color: #FF6060;
+        font-size: 20px;
+      }
+  
+      .host-picture {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+  
+  h1 {
+    color: #FF6060;
+    font-size: 35px;
+  }
+
+ 
